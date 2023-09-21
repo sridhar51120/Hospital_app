@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Hospital_app</string>
+    <string name="register_here_new_user">Register Here? New User?</string>
 </resources>
