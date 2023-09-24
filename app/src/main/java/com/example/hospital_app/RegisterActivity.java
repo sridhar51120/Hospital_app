@@ -41,13 +41,12 @@ public class RegisterActivity extends AppCompatActivity {
                 String password = edPassword.getText().toString();
                 String conform = edConform.getText().toString();
                 Database db = new Database(getApplicationContext(),"Health Care",null,1);
-
                 if(username.length() == 0 || email.length() == 0 || password.length() == 0 || conform.length() == 0){
                     Toast.makeText(getApplicationContext(),"Please fill All  Details",Toast.LENGTH_SHORT).show();
                 } else {
                     if(password.compareTo(conform) == 0){
                         if(isValid(password)){
-
+                            db.register(username,email,password);
                             Toast.makeText(getApplicationContext(),"Record Inserted",Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
                         }
