@@ -257,8 +257,7 @@
                     android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
-
-
-
     </GridLayout>
 </RelativeLayout>
+
+<!--1:40:00-->
